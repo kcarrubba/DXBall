@@ -6,6 +6,7 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI winText;
     public GameObject ball;
+    public bool gameOver = false;
     int score = 0;
 
     public void addScore(int input)
@@ -13,13 +14,15 @@ public class ScoreManager : MonoBehaviour
         if (input == 1) {
             score = score + input;
             scoreText.text = "Score: " + score.ToString();
-            if (score == 60) {
-            winText.text = "You Win!";
-            ball.SetActive(false);
+            if (score == 1) {
+                winText.text = "You Win!";
+                ball.SetActive(false);
+                gameOver = true;
             }
         }
         else if (input == 0) {
             winText.text = "Game Over!";
+            gameOver = true;
 
         }
     }
