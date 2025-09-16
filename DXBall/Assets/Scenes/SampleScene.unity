@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 3406332}
   m_Layer: 0
   m_Name: Brick (57)
-  m_TagString: Brick
+  m_TagString: Permanent Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -259,7 +259,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: d96f2a4aa82fa4a8abfc9033819f63d4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -973,7 +973,7 @@ GameObject:
   - component: {fileID: 111960822}
   m_Layer: 0
   m_Name: Brick (53)
-  m_TagString: Brick
+  m_TagString: Permanent Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1099,7 +1099,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: d96f2a4aa82fa4a8abfc9033819f63d4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3935,7 +3935,7 @@ GameObject:
   - component: {fileID: 570384126}
   m_Layer: 0
   m_Name: Brick (4)
-  m_TagString: Brick
+  m_TagString: Permanent Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4061,7 +4061,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: d96f2a4aa82fa4a8abfc9033819f63d4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4349,7 +4349,7 @@ GameObject:
   - component: {fileID: 661926658}
   m_Layer: 0
   m_Name: Brick (34)
-  m_TagString: Brick
+  m_TagString: Permanent Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4475,7 +4475,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: d96f2a4aa82fa4a8abfc9033819f63d4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6767,7 +6767,7 @@ GameObject:
   - component: {fileID: 1173897090}
   m_Layer: 0
   m_Name: Brick (30)
-  m_TagString: Brick
+  m_TagString: Permanent Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6893,7 +6893,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: d96f2a4aa82fa4a8abfc9033819f63d4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11024,7 +11024,7 @@ GameObject:
   - component: {fileID: 2095271579}
   m_Layer: 0
   m_Name: Brick (12)
-  m_TagString: Brick
+  m_TagString: Permanent Brick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11150,7 +11150,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: d96f2a4aa82fa4a8abfc9033819f63d4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

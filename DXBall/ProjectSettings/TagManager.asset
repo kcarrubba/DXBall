@@ -11,6 +11,7 @@ TagManager:
   - Top Wall
   - Bottom Wall
   - Logic
+  - Permanent Brick
   layers:
   - Default
   - TransparentFX

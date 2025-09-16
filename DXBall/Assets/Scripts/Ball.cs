@@ -1,7 +1,7 @@
 using UnityEngine;
+
 public class ball : MonoBehaviour
 {
-    // Start is called before the first frame update
     Rigidbody2D rb;
     public float speed;
     public Vector2 direction;
@@ -10,43 +10,65 @@ public class ball : MonoBehaviour
 
     void Start()
     {
-        rb= GetComponent<Rigidbody2D>();
-        direction= Vector2.one.normalized; //(1,1)
+        rb = GetComponent<Rigidbody2D>();
+        direction = Vector2.one.normalized; //(1,1)
         score = GameObject.FindGameObjectWithTag("Logic").GetComponent<ScoreManager>();
-
     }
 
-    // Update is called once per frame
     void Update()
     {
-        rb.linearVelocity= direction * speed;
+        rb.linearVelocity = direction * speed;
     }
 
-    void OnTriggerEnter2D(Collider2D collison)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collison.gameObject.CompareTag("Paddle"))
-            direction.y = -direction.y;
-
-        else if (collison.gameObject.CompareTag("Brick"))
+        if (collision.gameObject.CompareTag("Paddle"))
         {
             direction.y = -direction.y;
-            Destroy(collison.gameObject);
-            brickCount++;
-            Debug.Log("Brick count: " + brickCount);
-            score.addScore(1);  // when ball hits brick, score + 1
         }
+        else if (collision.gameObject.CompareTag("Brick") || collision.gameObject.CompareTag("Permanent Brick"))
+        {
+            // Determine which side of the brick was hit
+            Vector2 contactPoint = transform.position - collision.transform.position;
 
-        else if (collison.gameObject.CompareTag("Side Wall"))
+            if (Mathf.Abs(contactPoint.x) > Mathf.Abs(contactPoint.y))
+            {
+                // Left/right hit
+                direction.x = -direction.x;
+            }
+            else
+            {
+                // Top/bottom hit
+                direction.y = -direction.y;
+            }
+
+            if (collision.gameObject.CompareTag("Brick"))
+            {
+                // Destroy and score for normal bricks
+                Destroy(collision.gameObject);
+                brickCount++;
+                Debug.Log("Brick count: " + brickCount);
+                score.addScore(1);
+            }
+            else
+            {
+                // Permanent brick → just bounce
+                Debug.Log("Hit a Permanent Brick!");
+            }
+        }
+        else if (collision.gameObject.CompareTag("Side Wall"))
+        {
             direction.x = -direction.x;
-
-        else if (collison.gameObject.CompareTag("Top Wall"))
+        }
+        else if (collision.gameObject.CompareTag("Top Wall"))
+        {
             direction.y = -direction.y;
-
-        else if (collison.gameObject.CompareTag("Bottom Wall"))
+        }
+        else if (collision.gameObject.CompareTag("Bottom Wall"))
         {
             Debug.Log("Game over");
             gameObject.SetActive(false);
-            score.addScore(0);  // when ball hits bottom floor, score = 0
+            score.addScore(0);
         }
     }
 }
