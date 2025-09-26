@@ -15,7 +15,7 @@ public class ScoreManager : MonoBehaviour
         if (input == 1) {
             score = score + input;
             scoreText.text = "Score: " + score.ToString();
-            if (score == 4) {
+            if (score == 54) {
                 winText.text = "You Win!";
                 ball.SetActive(false);
                 // Check which scene we’re in
