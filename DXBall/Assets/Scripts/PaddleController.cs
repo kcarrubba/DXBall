@@ -23,11 +23,11 @@ public class PaddleController : MonoBehaviour
         return;
 
     if ((Input.GetKey(KeyCode.RightArrow))){
-        if (initial.x <= 9.75)
+        if (initial.x <= 7.75)
             initial.x = initial.x + displacement;
     }
     else if ((Input.GetKey(KeyCode.LeftArrow))){
-        if (initial.x > -9.75)
+        if (initial.x > -7.75)
             initial.x = initial.x - displacement;
     }
     pad.MovePosition(initial);   
