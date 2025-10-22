@@ -12,6 +12,8 @@ TagManager:
   - Bottom Wall
   - Logic
   - Permanent Brick
+  - Block
+  - Music
   layers:
   - Default
   - TransparentFX
